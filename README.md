@@ -1,4 +1,4 @@
-# ⚡SynapseCode - AI Assisted Code Editor with Real-Time Collaboration
+#Sync-code - AI Assisted Code Editor with Real-Time Collaboration
 
 ## Overview
 
@@ -18,11 +18,9 @@ SynapseCode meets these needs by integrating advanced AI capabilities with robus
 
 ### Core Infrastructure
 
-#### 1. Authentication & Database
-- **Firebase Authentication & Realtime Database:**  
-  - **Sign-Up/Login:** Users can register using Google or email with OTP verification.  
-  - **Password Management:** Secure options for password reset and change.  
-  - **Realtime Sync:** All code, files, and collaboration events are synchronized instantly using Firebase's Realtime Database and snapshot listeners. This ensures that every edit, file change, or chat message is reflected in real time across all user sessions. 🔄
+#### 1. Secured by clerk
+--**clerk and resender api**
+🔄
 
 #### 2. AI Integration
 - **Google Gemini API:**  
@@ -43,33 +41,6 @@ SynapseCode meets these needs by integrating advanced AI capabilities with robus
   - **Chat Integration:** Provides an in-workspace chat feature where members can discuss code, share snippets, and receive messages in real time. 💬  
   - **Workspace Invitations:** Users can invite others to join public workspaces; join/exit events and invitation responses are updated live. 🔔
 
-## Tech Stack
-
-| Component              | Technology                                              |
-|------------------------|---------------------------------------------------------|
-| **Frontend**           | Next.js 15, Shadcn UI, Tailwind CSS                     |
-| **Code Editor**        | Monaco Editor                                           |
-| **Realtime Backend**   | Firebase Realtime Database & Firestore                  |
-| **AI Services**        | Google Gemini API                                       |
-| **Authentication**     | Firebase Authentication (Google & Email/OTP)            |
-| **Language**           | JavaScript                                              |
-
-## Implementation Details
-
-### 🔐 Authentication & User Management
-- **User Sign-Up/Login:**  
-  - **Google OAuth & Email/OTP:** Users have the flexibility to register using Google accounts or via email with OTP verification.  
-  - **Password Management:** Features include password resets and updates, ensuring secure access.
-
-### 🚀 Real-Time Collaboration
-- **Live Synchronization:**  
-  - **Firebase Realtime Database:** Utilized for instant synchronization of code changes, file updates, and user presence (such as live cursor positions and chat messages).  
-  - **Snapshot Listeners:** Firebase snapshot listeners continuously monitor changes in the database, ensuring that every update (whether it’s a code edit, a file reordering, or a chat message) is immediately reflected across all connected clients. 🔄
-- **Collaborative Workspace:**  
-  - **Invitations & Notifications:** Workspace members can send invites, and new joiners are added in real time.  
-  - **Integrated Chat & Presence:** An in-built chat system allows team members to communicate instantly, while live cursor tracking displays the real-time location of each collaborator's cursor.  
-- **Autosave Feature:**  
-  - All code edits are automatically saved to the Firebase database, reducing the risk of data loss and ensuring seamless recovery of work.
 
 ### 📝 Code Editor Features
 - **Monaco Editor Integration:**  
@@ -88,9 +59,3 @@ SynapseCode meets these needs by integrating advanced AI capabilities with robus
 - **AI Chatbot:**  
   - An interactive AI chatbot is embedded within the editor, offering instant help, brainstorming ideas, and generating documentation on demand.
 
-## Installation & Setup
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/Abhi13-02/Haxplore.git
-   cd Haxplore
