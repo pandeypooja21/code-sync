@@ -1,8 +1,8 @@
-#Sync-code - AI Assisted Code Editor with Real-Time Collaboration
+## Sync-code - AI Assisted Code Editor with Real-Time Collaboration
 
 ## Overview
 
-SynapseCode is a lightweight, AI-assisted code editor designed to empower developers with real-time multi-user collaboration and advanced AI-driven features. Built with a secure and intuitive workspace, SynapseCode not only supports live code editing and file management but also enhances productivity with AI-powered linting, auto-completion, documentation generation, and syntax correction.
+SyncCode is a lightweight, AI-assisted code editor designed to empower developers with real-time multi-user collaboration and advanced AI-driven features. Built with a secure and intuitive workspace, SyncCode not only supports live code editing and file management but also enhances productivity with AI-powered linting, auto-completion, documentation generation, and syntax correction.
 
 ## Problem Statement
 
@@ -12,9 +12,7 @@ Modern software development demands rapid collaboration and high-quality code. D
 - **Ensure organized workspace management:** Support both private and public workspaces with clear file/folder hierarchies.
 - **Automatically synchronize code, files, and user interactions:** Eliminate manual saving and reduce merge conflicts.
 
-SynapseCode meets these needs by integrating advanced AI capabilities with robust real-time collaboration, empowering teams to write, review, and maintain high-quality code efficiently.
 
-## Solution Architecture
 
 ### Core Infrastructure
 
@@ -42,20 +40,4 @@ SynapseCode meets these needs by integrating advanced AI capabilities with robus
   - **Workspace Invitations:** Users can invite others to join public workspaces; join/exit events and invitation responses are updated live. 🔔
 
 
-### 📝 Code Editor Features
-- **Monaco Editor Integration:**  
-  - **Multi-Language Support:** Enables syntax highlighting and code editing for multiple programming languages.  
-  - **Customizable UI:** Users can change themes, adjust font sizes, and collapse/expand code sections as needed.
-- **File Navigation Panel:**  
-  - **Recursive Rendering:** The file and folder navigation panel uses a recursive algorithm to display nested directories efficiently. This allows for dynamic creation, renaming, deletion, and reordering (via drag-and-drop) of files and folders, with every change synced in real time. 🗂️  
-  - **Real-Time Updates:** Changes to the file system are reflected immediately across all users in the workspace, ensuring consistent project structure.
-
-### 🤖 AI-Driven Enhancements
-- **Code Suggestions & Linting:**  
-  - Integrated with the Google Gemini API, SynapseCode delivers smart code completions and real-time error detection along with recommended fixes.  
-- **Auto-Documentation & Code Correction:**  
-  - AI-generated documentation is available for complex functions, helping to maintain clear and well-documented code.  
-  - Real-time code correction detects syntax errors as you type, automatically suggesting fixes to streamline development.  
-- **AI Chatbot:**  
-  - An interactive AI chatbot is embedded within the editor, offering instant help, brainstorming ideas, and generating documentation on demand.
 
